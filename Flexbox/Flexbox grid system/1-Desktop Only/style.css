@@ -1,5 +1,32 @@
 /* write CSS to correspond with the descriptions above. See notes for math tips */
 
+.row {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  gap: 4%;
+}
+figure {
+  flex-basis: 22%;
+}
+.span2column {
+  flex-basis: 48%;
+}
+.span3columns {
+  flex-basis: 74%;
+}
+.span4 {
+  flex-basis: 100%;
+}
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.order3 {
+  order: 3;
+}
 /* default styling, no changes needed here */
 
 /* set the layout to border box model */
@@ -56,52 +83,4 @@ figure > div {
 }
 .four {
   background-color: #005f73;
-}
-@media (min-width: 550px) {
-  .row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 4%;
-    margin-bottom: 1rem;
-  }
-  figure,
-  .span2 {
-    flex-basis: 48%;
-  }
-  .span3 {
-    flex-basis: 100%;
-  }
-  .span3-1 {
-    flex-basis: 100%;
-  }
-  .span4 {
-    flex-basis: 100%;
-  }
-  .span2-4 {
-    flex-basis: 100%;
-  }
-}
-@media (min-width: 800px) {
-  figure,
-  .span3-1 {
-    flex-basis: 22%;
-  }
-  .span2,
-  .span2-4 {
-    flex-basis: 48%;
-  }
-  .span3 {
-    flex-basis: 74%;
-  }
-
-  .order-1 {
-    order: 1;
-  }
-  .order-2 {
-    order: 2;
-  }
-  .order-3 {
-    order: 3;
-  }
 }

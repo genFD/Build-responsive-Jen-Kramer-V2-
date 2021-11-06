@@ -22,14 +22,17 @@ ul {
   border: 10px dotted #9b2226;
   width: 900px;
   height: 500px;
-  /* row wrap is what we want for responsive design */
+  /* row wrap is what we want for responsive design : it wraps the boxes on another line when the screen get too long */
   display: flex;
   flex-flow: row wrap;
+  /* controls the alignement along the main axis  */
   justify-content: center;
+  /* controls the aligment along the cross axis */
   align-items: center;
-  /* remove the gap */
+  /* controls gap when there's extra space in the cross axis and when wrap is set to wrap or wrap-reverse */
   align-content: space-evenly;
 }
+
 /* set a border and background color to see each LI. Min-width and min-height are not necessarily a good idea in flexbox, but they are needed for the demo to better see the properties work. */
 li {
   border: 2px solid #001219;
@@ -40,5 +43,6 @@ li {
 }
 .flex2 {
   order: 2;
+  /* controls the width of the item this item will be 25% of the parent */
   flex-basis: 25%;
 }
