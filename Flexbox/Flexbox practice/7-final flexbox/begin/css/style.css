@@ -55,7 +55,6 @@ section ul {
 
 .header {
   background-color: var(--color5);
-  /* height: 3rem; */
 }
 
 /* width limited and centered to line up with the rest of the page */
@@ -116,6 +115,8 @@ nav a:hover {
   color: var(--color5);
 }
 
+/* hero styles */
+
 #hero {
   background-color: var(--color7);
   text-align: center;
@@ -129,9 +130,8 @@ nav a:hover {
   max-height: 454px;
 }
 
-/* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. */
+/* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. 
 
-/*
 Spelled out the individual border styles so border-color could go elsewhere. Styling is the same for all borders except the color. */
 
 figure {
@@ -171,6 +171,16 @@ figcaption a {
   padding: 1rem;
   text-decoration: none;
   color: var(--color1);
+}
+
+/* featured image styles */
+
+#featured figure {
+  max-height: 650px;
+}
+
+#featured img {
+  object-position: 0;
 }
 
 /* style is doing double duty, styling border color and hover color. Only one declaration usually applies though.  */
@@ -270,6 +280,11 @@ footer address {
   margin-top: 2rem;
   font-weight: bold;
 }
+.stripe {
+  background-color: var(--color2);
+  color: white;
+  padding: 1rem 0 2rem 0;
+}
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
@@ -331,6 +346,13 @@ footer address {
     color: var(--color2);
     background-color: transparent;
   }
+
+  #popular li:last-child {
+    flex-basis: 100%;
+  }
+  #popular li:last-child figure img {
+    object-position: 0 -350px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -360,5 +382,11 @@ footer address {
   nav li:nth-child(4),
   nav li:nth-child(5) {
     order: 3;
+  }
+  #popular li:last-child {
+    flex-basis: 32.5%;
+  }
+  #popular li:last-child figure img {
+    object-position: 0;
   }
 }
