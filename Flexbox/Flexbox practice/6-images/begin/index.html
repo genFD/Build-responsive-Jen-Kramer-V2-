@@ -7,19 +7,18 @@
     <title>Collections</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
+
   <body>
     <div class="header">
       <header>
         <nav>
           <ul>
             <li>
-              <a href="#">
-                <img
-                  class="header-logo"
-                  src="./img/header-logo.svg"
-                  alt="Wall of wonder. Click for home."
-                />
-              </a>
+              <a href="#"
+                ><img
+                  src="img/header-logo.svg"
+                  alt="Wall of Wonder. Click for home."
+              /></a>
             </li>
             <li><a href="#">Collections</a></li>
             <li><a href="#">About</a></li>
@@ -29,6 +28,17 @@
         </nav>
       </header>
     </div>
+    <!-- hero image -->
+    <section id="hero">
+      <picture>
+        <source srcset="img/hero-1200.png" media="(min-width:839px)" />
+        <source srcset="img/hero-838.png" media="(min-width:301px)" />
+        <img
+          src="./img/hero-300.png"
+          alt="hero image banner woman wearing vr glasses"
+        />
+      </picture>
+    </section>
     <section id="mission">
       <h2>Our Mission</h2>
       <div class="missiontext">
@@ -47,7 +57,23 @@
         </p>
       </div>
     </section>
-    <section id="featured"></section>
+    <section id="featured">
+      <h2>Featured print</h2>
+      <figure class="color6">
+        <img
+          sizes="(min-width:300px) 33.3vw, 100"
+          srcset="
+                    img/too-cool-300.jpg 300w, 
+                    img/too-cool-740.jpg 740vw,
+                    img/too-cool-1058.jpg 1058vw,
+                    img/too-cool-1200.jpg 1200 vw,
+                    "
+          src="./img/too-cool-1200.jpg"
+          alt="Close up of woman in sunglasses showing eyes, nose and fingers over mouth"
+        />
+        <figcaption><a href="#">Too cool for school</a></figcaption>
+      </figure>
+    </section>
     <section id="collections">
       <h2>Collections</h2>
       <ul>
